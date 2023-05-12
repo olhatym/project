@@ -1,6 +1,6 @@
 /* for all */
 :root {
-
+    --text-color: #434455;
 }
 
 body {
@@ -17,10 +17,44 @@ body {
     list-style: none;
 }
 
+.section-title {
+    font-size: 36px;
+    line-height: 1,11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+}
+
+.list-header {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1,2;
+    letter-spacing: 0.02em;
+}
+
+.list-text {
+    font-size: 16px;
+    line-height: 1,5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
 /* Header */
 .logo {
     font-family: 'Raleway', sans-serif;
-    font-weight: 800;
     font-size: 18px;
     line-height: 1,17;
     color: #4D5AE5;
@@ -33,7 +67,6 @@ body {
 }
 
 .nav-item {
-    font-weight: 500;
     font-size: 16px;
     line-height: 1,5;
     letter-spacing: 0.02em;
@@ -48,7 +81,6 @@ body {
     font-style: normal;
 }
 .contacts-item {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1,5;
     letter-spacing: 0.02em;
@@ -66,7 +98,6 @@ body {
     background: #2E2F42;
 }
 .hero-header {
-    font-weight: 700;
     font-size: 56px;
     line-height: 1,07;
     text-align: center;
@@ -76,7 +107,6 @@ body {
 
 .hero-btn {
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
     font-size: 16px;
     line-height: 1,5;
     align-items: center;
@@ -92,27 +122,12 @@ body {
 }
 
 .feachers-header-item {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1,2;
-    letter-spacing: 0.02em;
 }
 
 .feachers-text-item {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1,5;
-    letter-spacing: 0.02em;
-    color: #434455;
 }
 
 .services-header {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1,11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
 }
 
 .team {
@@ -120,12 +135,6 @@ body {
 }
 
 .team-header {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1,11;
-    text-align: center;
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
 }
 
 .team-item {
@@ -133,25 +142,16 @@ body {
 }
 
 .team-header-item {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1,2;
-    letter-spacing: 0.02em;
 }
 
 .team-text-item {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1,5;
-    letter-spacing: 0.02em;
-    color: #434455;
 }
+
 /* main Portfolio */
 
 .portfolio-btn {
     font-family: 'Roboto', sans-serif;
     font-style: normal;
-    font-weight: 500;
     font-size: 16px;
     line-height: 1,5;
     letter-spacing: 0.04em; 
@@ -168,19 +168,10 @@ body {
 }
 
 .portfolio-header {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1,2;
-    letter-spacing: 0.02em;
     color: #2E2F42;
 }
 
 .portfolio-text {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1,5;
-    letter-spacing: 0.02em;
-    color: #434455;
 }
 
 /* Footer */
