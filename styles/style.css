@@ -309,6 +309,7 @@ img {
                 0px 1px 1px rgba(46, 47, 66, 0.16),
                 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
+    padding-bottom: 32px;
     /* margin-right: 24px; */
 }
 
@@ -318,24 +319,26 @@ img {
 
 .team-name-position {
     padding: 32px 16px 0;
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
 }
 
 .team-header-item {
     /* margin-top: 32px; */
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
     text-align: center;
 }
 
 .team-text-item {
     /* margin-bottom: 32px; */
+    margin-bottom: 8px;
     text-align: center;
 }
 
 .social-net {
     display: flex;
     gap: 24px;
-    margin: 0 16px 32px;
+    /* margin-bottom: 32px; */
+    /* margin: 0 16px 32px; */
 }
 .social-item {
     width: 40px;
