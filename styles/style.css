@@ -237,16 +237,17 @@ img {
 }
 
 .feachers-img {
-    /* background-color: #F4F4FD; */
+    background-color: #F4F4FD;
     border-radius: 4px;
     width: 264px;
     height: 112px;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-/* .feachers-icon{
-    display: flex;
-} */
+.feachers-icon{
+}
 
 /* .feachers-list .item:last-child {
     margin-right: 0;
@@ -320,7 +321,8 @@ img {
 } */
 
 .team-name-position {
-    padding: 32px 16px;
+    padding: 32px 16px 0;
+    margin-bottom: 8px;
 }
 
 .team-header-item {
@@ -334,11 +336,75 @@ img {
     text-align: center;
 }
 
-/* .social-network {
-    background-color: #4D5AE5;
+.social-net {
+    display: flex;
+    gap: 24px;
+    margin: 0 16px 32px;
+}
+.social-item {
     width: 40px;
     height: 40px;
-} */
+    background-color: #4D5AE5;
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.social-icons {
+    width: 16px;
+    height: 16px;
+    fill: #F4F4FD;
+}
+
+.social-item:hover,
+.social-item:focus {
+    background-color: #404BBF;
+}
+
+/* CUSTOMERS */
+
+.customers {
+    padding-top: 23px;
+    padding-bottom: 120px;
+}
+
+.customers-title {
+    margin-bottom: 72px;
+}
+
+.customers-list {
+    display: flex;
+    gap: 24px;
+}
+.customers-item {
+    width: 168px;
+    height: 88px;
+  
+    
+    /* fill: #8E8F99; */
+}
+
+.customer-link {
+    display: flex;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
+    color: #8E8F99;
+}
+
+.customers-logo {
+    fill: currentColor;
+    width: 104px;
+    height: 56px;
+    margin: 16px 32px;
+}
+
+.customer-link:hover,
+.customer-link:focus {
+    border: 1px solid #404BBF;
+    color: #404BBF;
+}
+
+
+
 
 /* main Portfolio */
 
@@ -431,6 +497,8 @@ img {
     background-color: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
+    display: flex;
+    gap: 120px;
 }
 
 .footer .link {
@@ -449,5 +517,39 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     max-width: 264px;
+}
+
+.social-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+
+    margin-bottom: 16px;
+}
+
+.footer-list {
+    display: flex;
+    gap: 16px;
+}
+
+.footer-soc-item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+    padding: 8px;
+}
+
+.footer-social {
+    width: 24px;
+    height: 24px;
+    fill: #F4F4FD;
+}
+
+.footer-soc-item:hover, 
+.footer-soc-item:focus {
+    background-color: #31D0AA;
 }
 
