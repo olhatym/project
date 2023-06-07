@@ -18,7 +18,7 @@
             <nav class="navigation">
                 <a class="logo link" href="./index.html">Web<span class="logo-second-part">Studio</span></a>
                 <ul class="list nav-list">
-                    <li class="item"><a class="nav-item link" href="./index.html">Studio</a></li>
+                    <li class="item"><a class="nav-item current link" href="./index.html">Studio</a></li>
                     <li class="item"><a class="nav-item link" href="./portfolio.html">Portfolio</a></li>
                     <li class="item"><a class="nav-item link" href="">Contacts</a></li>
                 </ul>
@@ -37,7 +37,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-header">Effective Solutions for Your Business</h1>
-                <button class="hero-btn" type="button">Order Service</button>
+                <button class="hero-btn" data-modal-open type="button">Order Service</button>
             </div>
         </section>
         
@@ -343,5 +343,67 @@
             </div>
         </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-window">
+            <button type="button" class="close-btn" data-modal-close>
+                <svg class="close-icon">
+                    <use href="./images/symbol-defs.svg#close-btn"></use>
+                </svg>
+            </button>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <div class="modal-field">
+                    <label for="user-name" class="modal-label">Name</label>
+                    <div class="form-field">
+                        <input 
+                            type="text" 
+                            name="user-name" 
+                            id="user-name" 
+                            class="modal-input">
+                        <svg class="form-icons">
+                            <use href="./images/symbol-defs.svg#person"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="user-phone" class="modal-label">Phone</label>
+                    <div class="form-field">
+                        <input 
+                            type="tel" 
+                            name="user-phone" 
+                            id="user-phone" 
+                            class="modal-input">
+                        <svg class="form-icons">
+                            <use href="./images/symbol-defs.svg#phone"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="user-email" class="modal-label">Email</label>
+                    <div class="form-field">
+                        <input 
+                            type="email"
+                            name="user-email"
+                            id="user-email"
+                            class="modal-input">
+                        <svg class="form-icons">
+                            <use href="./images/symbol-defs.svg#email"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-textarea">
+                    <label for="comment" class="modal-label">Comment</label>
+                    <textarea 
+                        name="comment" 
+                        id="comment" 
+                        class="modal-comment" 
+                        placeholder="Text here"></textarea>
+                </div>
+
+                <button type="submit" class="modal-submit">Send</button>
+            </form>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
