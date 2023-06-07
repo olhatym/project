@@ -591,8 +591,11 @@ img {
 
 .footer .container {
     display: flex;
-    gap: 120px;
     align-items: baseline;
+}
+
+.container-disclaimer {
+    margin-right: 120px;
 }
 
 .footer .link-logo {
@@ -613,10 +616,9 @@ img {
     max-width: 264px;
 }
 
-/* .container-social {
-    background-color: #fff;
-    padding-top: 5px;
-} */
+.container-social {
+    margin-right: 80px;
+}
 
 .social-title {
     font-weight: 500;
@@ -662,6 +664,81 @@ img {
 
     transition-property: background-color;
     transition: var(--trans);
+}
+
+.container-form {
+    width: 453px;
+}
+
+.footer-form-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+
+.footer-form {
+    display: flex;
+}
+
+.footer-login {
+    width: 264px;
+    height: 40px;
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    margin-right: 24px;
+
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.footer-login::placeholder {
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.subscribe-btn {
+    min-width: 165px;
+    height: 40px;
+    background: #4D5AE5;
+    border-radius: 4px; 
+    border: none;
+    padding-left: 24px;
+    padding-right: 24px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+
+    transition-property: background-color;
+    transition: var(--trans);
+}
+
+.subscribe-icon {
+    width: 24px;
+    height: 24px;
+    fill: #FFFFFF;
+}
+
+
+.subscribe-btn:hover,
+.subscribe-btn:focus {
+background-color: #404BBF;
 }
 
 /* MODAL */
@@ -761,6 +838,9 @@ img {
     line-height: 1.17;
     color: rgba(46, 47, 66, 0.4);
     letter-spacing: 0.04em;
+
+    /* transition-property: border-color; */
+    transition: border-color var(--trans);
 }
 
 .modal-input:focus,
@@ -794,6 +874,9 @@ img {
     transform: translateY(-50%);
     left: 16px;
     fill: #2E2F42;
+
+    transition-property: fill;
+    transition: var(--trans);
 }
 
 .modal-textarea {
@@ -822,26 +905,27 @@ img {
 }
 
 .modal-submit {
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    cursor: pointer;
 
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
 
-    position: absolute;
+    display: block;
+    margin: 24px auto;
+
+    /* position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 24px;
+    bottom: 24px; */
 
     transition-property: background-color;
     transition: var(--trans);
