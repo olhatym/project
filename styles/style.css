@@ -32,10 +32,11 @@ img {
 }
 
 .container {
-    width: 1158px;
+    /* width: 1158px; */
+    width: 100%;
     margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 16px;
+    padding-right: 16px;
     /* outline: 2px solid red; */
 }
 
@@ -48,14 +49,15 @@ img {
 }
 
 .list-header {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
 }
 
 .list-text {
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--text-color);
@@ -264,31 +266,27 @@ img {
 /* FEACHERS */
 
 .feachers {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .feachers-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    row-gap: 72px;
 }
 
 .feachers-list .item {
-    width: calc((100%-72px)/4);
+    width: 100%;
 }
 
 .feachers-img {
-    background-color: #F4F4FD;
-    border-radius: 4px;
-    width: 100%;
-    height: 112px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: none;
 }
 
 .feachers-header-item {
     margin-bottom: 8px;
+    text-align: center;
 }
 
 
