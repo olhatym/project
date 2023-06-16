@@ -14,7 +14,7 @@
     <title>WebStudio</title>
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container">
            
             <nav class="navigation">
@@ -32,16 +32,73 @@
                     <li class="item"><a class="contacts-item link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+            <button type="button" class="menu-btn" data-menu-open>
+                <svg width="32" height="22" class="menu-icon">
+                    <use href="./images/symbol-defs.svg#menu-hamburger"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <div class="menu-mob is-hidden" data-menu>
+            <div>
+                <button type="button" class="close-menu-btn" data-menu-close>
+                    <svg class="close-menu-icon">
+                        <use href="./images/symbol-defs.svg#close-btn"></use>
+                    </svg>
+                </button>
+                <ul class="list menu-list">
+                    <li class="menu-li"><a class="menu-item current link" href="./index.html">Studio</a></li>
+                    <li class="menu-li"><a class="menu-item link" href="./portfolio.html">Portfolio</a></li>
+                    <li class="menu-li"><a class="menu-item link" href="">Contacts</a></li>
+                </ul>
+            </div>
+            <div>
+                <address class="menu-contacts">
+                    <ul class="list menu-contacts-list">
+                        <li class="item"><a class="contacts-menu-item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="item"><a class="contacts-menu-tel link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                    </ul>
+                </address>
+                <ul class="list social-net-menu">
+                    <li class="social-item">
+                        <a class="link soc-link" href="" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-menu-icons">
+                                <use href="./images/symbol-defs.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="link soc-link" href="" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-menu-icons">
+                                <use href="./images/symbol-defs.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="link soc-link" href="" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-menu-icons">
+                                <use href="./images/symbol-defs.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-item">
+                        <a class="link soc-link" href="" target="_blank" rel="noopener noreferrer">
+                            <svg class="social-menu-icons">
+                                <use href="./images/symbol-defs.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
     <main>
         <!-- hero -->
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container">
                 <h1 class="hero-header">Effective Solutions for Your Business</h1>
                 <button class="hero-btn" data-modal-open type="button">Order Service</button>
             </div>
-        </section> -->
+        </section>
         
         <!-- section 1 Feachers -->
         <section class="feachers">
@@ -304,7 +361,7 @@
         </div>
         </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="container-disclaimer">
                 <a class="logo link link-logo" href="./index.html">Web<span class="logo-second-footer">Studio</span></a>
@@ -360,7 +417,7 @@
                 </form>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-window">
             <button type="button" class="close-btn" data-modal-close>
@@ -436,5 +493,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
+
 </body>
 </html>
