@@ -78,7 +78,6 @@ img {
 
 .no-scroll {
     overflow:hidden;
-    /* scroll-behavior: unset; */
 }
 
 /* Header */
@@ -220,7 +219,7 @@ img {
 .contacts-menu-tel {
     font-weight: 700;
     font-style: normal;
-    font-size: 36px;
+    font-size: 32px;
     line-height: 1.11;
 }
 
@@ -815,7 +814,7 @@ background-color: #404BBF;
     /* width: 408px; */
     width: 92%;
     max-width: 392px;
-    max-height: 584px;
+    min-height: 584px;
     background-color: #FCFCFC;
     position: absolute;
     top: 50%;
@@ -1002,6 +1001,15 @@ background-color: #404BBF;
     color: #8E8F99;
     display: flex;
     align-items: center;
+    
+}
+
+.agree-link {
+    color: #4D5AE5;
+    text-decoration-line: underline;
+    
+    
+    /* display: inline; */
 }
 
 .fake-checkbox {
